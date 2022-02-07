@@ -207,8 +207,14 @@
 
 //========================================================================================================================================================
 
-function booleanToString(b) {
-   return b === true ? "true" : "false"
-}
+// function booleanToString(b) {
+//    return b === true ? "true" : "false"
+// }
 
-console.log(booleanToString(false));
+// console.log(booleanToString(false));
+
+//========================================================================================================================================================
+
+function isIsogram(str) {
+   return new Set(str.toLowerCase()).size === str.length
+}
