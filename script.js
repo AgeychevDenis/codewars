@@ -259,10 +259,25 @@
 
 //========================================================================================================================================================
 
-function descendingOrder(n) {
-   return +n.toString().split('').sort((a, b) => {
-      return b - a;
-   }).join('');
-};
+// function descendingOrder(n) {
+//    return +n.toString().split('').sort((a, b) => {
+//       return b - a;
+//    }).join('');
+// };
 
-console.log(descendingOrder(534565748));
+// console.log(descendingOrder(534565748));
+
+// function descendingOrder(n) {
+//    return +n.toString().split('').sort().reverse().join('');
+//  }
+
+//========================================================================================================================================================
+
+function maps(x) {
+   const arr = x.map(num => {
+      return num + num
+   })
+   return arr
+}
+
+console.log(maps([4, 1, 1, 1, 4]));
