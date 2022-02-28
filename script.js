@@ -273,11 +273,49 @@
 
 //========================================================================================================================================================
 
-function maps(x) {
-   const arr = x.map(num => {
-      return num + num
-   })
-   return arr
-}
+// function maps(x) {
+//    const arr = x.map(num => {
+//       return num + num
+//    })
+//    return arr
+// }
 
-console.log(maps([4, 1, 1, 1, 4]));
+// console.log(maps([4, 1, 1, 1, 4]));
+
+
+// function maps(x) {
+//    return x.map(n => n * 2);
+// }
+
+//========================================================================================================================================================
+
+// function getSum(a, b) {
+//    let count = 0;
+//    if (a == b) return a;
+//    if (a < b) {
+//       for (; a <= b; a++) {
+//          count += a;
+//       }
+//    } else if (a > b) {
+//       for (; b <= a; b++) {
+//          count += b;
+//       }
+//    }
+//    return count;
+// }
+
+
+
+// const GetSum = (a, b) => {
+//    let min = Math.min(a, b),
+//       max = Math.max(a, b);
+//    return (max - min + 1) * (min + max) / 2;
+// }
+
+// console.log(getSum(-375, -211));
+
+//========================================================================================================================================================
+
+function removeEveryOther(arr){
+  return arr.filter((_, idx) => idx % 2 === 0)
+}
