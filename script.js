@@ -283,6 +283,7 @@
 // console.log(maps([4, 1, 1, 1, 4]));
 
 
+<<<<<<< HEAD
 // function maps(x) {
 //    return x.map(n => n * 2);
 // }
@@ -318,4 +319,37 @@
 
 function removeEveryOther(arr){
   return arr.filter((_, idx) => idx % 2 === 0)
+=======
+//=================================================================================================================
+
+// function cockroachSpeed(s) {
+//    return Math.floor(s * 100000 / 3600)
+// }
+
+//=================================================================================================================
+
+// function sumMix(x) {
+//    let sum = 0
+//    x.forEach(elem => {
+//       sum += +elem
+//    })
+//    return sum
+// }
+
+//=================================================================================================================
+
+
+function updateLight(current) {
+   switch (current) {
+      case 'green':
+         return 'yellow';
+         break;
+      case 'yellow':
+         return 'red';
+         break;
+      case 'red':
+         return 'green';
+         break;
+   }
+>>>>>>> c888157e4d7c9ec8af701417ef9ca289544f97e1
 }
