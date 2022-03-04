@@ -365,21 +365,31 @@
 
 //========================================================================================================================================================
 
-function countPositivesSumNegatives(input) {
-   if (!input || !input.length) return []
-   let numbers = 0
-   let minusNum = 0
-   input.forEach(num => {
-      if (num > 0) {
-         numbers++
-      } else {
-         minusNum += num
-      }
-   })
-   return [numbers, minusNum]
+// function countPositivesSumNegatives(input) {
+//    if (!input || !input.length) return []
+//    let numbers = 0
+//    let minusNum = 0
+//    input.forEach(num => {
+//       if (num > 0) {
+//          numbers++
+//       } else {
+//          minusNum += num
+//       }
+//    })
+//    return [numbers, minusNum]
+// }
+// console.log(countPositivesSumNegatives([1221, -4, -4 - 5, null]));
+
+//========================================================================================================================================================
+
+function simpleMultiplication(number) {
+   if (number % 2 === 0) {
+      return number * 8
+   } else {
+      return number * 9
+   }
 }
-console.log(countPositivesSumNegatives([1221, -4, -4 - 5, null]));
 
-
+console.log(simpleMultiplication(4));
 
 
