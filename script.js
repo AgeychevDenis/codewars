@@ -1,3 +1,4 @@
+'use string';
 // let array1 = [true, true, true, false,
 //    true, true, true, true,
 //    true, false, true, false,
@@ -354,11 +355,31 @@
 
 //========================================================================================================================================================
 
-function reverseWords(str) {
-   let newStr = '';
-   str.split(' ').forEach(word => {
-      newStr += word.split('').reverse().join('') + ' ';
-   });
-   return newStr.trimEnd()
+// function reverseWords(str) {
+//    let newStr = '';
+//    str.split(' ').forEach(word => {
+//       newStr += word.split('').reverse().join('') + ' ';
+//    });
+//    return newStr.trimEnd()
+// }
+
+//========================================================================================================================================================
+
+function countPositivesSumNegatives(input) {
+   if (!input || !input.length) return []
+   let numbers = 0
+   let minusNum = 0
+   input.forEach(num => {
+      if (num > 0) {
+         numbers++
+      } else {
+         minusNum += num
+      }
+   })
+   return [numbers, minusNum]
 }
+console.log(countPositivesSumNegatives([1221, -4, -4 - 5, null]));
+
+
+
 
