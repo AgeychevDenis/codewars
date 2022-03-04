@@ -348,6 +348,17 @@
 
 //========================================================================================================================================================
 
-function removeEveryOther(arr) {
-   return arr.filter((_, idx) => idx % 2 === 0)
+// function removeEveryOther(arr) {
+//    return arr.filter((_, idx) => idx % 2 === 0)
+// }
+
+//========================================================================================================================================================
+
+function reverseWords(str) {
+   let newStr = '';
+   str.split(' ').forEach(word => {
+      newStr += word.split('').reverse().join('') + ' ';
+   });
+   return newStr.trimEnd()
 }
+
