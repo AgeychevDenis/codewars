@@ -302,16 +302,30 @@
 //=================================================================================================================
 
 
-function updateLight(current) {
-   switch (current) {
-      case 'green':
-         return 'yellow';
-         break;
-      case 'yellow':
-         return 'red';
-         break;
-      case 'red':
-         return 'green';
-         break;
+// function updateLight(current) {
+//    switch (current) {
+//       case 'green':
+//          return 'yellow';
+//          break;
+//       case 'yellow':
+//          return 'red';
+//          break;
+//       case 'red':
+//          return 'green';
+//          break;
+//    }
+// }
+
+// function updateLight(current) {
+//    return current === 'yellow' ? 'red' : current === 'green' ? 'yellow' : 'green';
+// }
+
+//=================================================================================================================
+
+function towerBuilder(nFloors) {
+   let res = []
+   for (i = 0; i < nFloors; i++) {
+      res.push(" ".repeat((nFloors - i) - 1) + "*".repeat((i * 2) + 1) + " ".repeat((nFloors - i) - 1));
    }
+   return res
 }
