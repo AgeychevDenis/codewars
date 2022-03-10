@@ -408,16 +408,27 @@
 
 //========================================================================================================================================================
 
-function openOrSenior(data) {
-   let mass = []
-   data.forEach(elem => {
-      if (elem[0] >= 55 && elem[1] > 7) {
-         mass.push('Senior')
-      } else {
-         mass.push('Open')
-      }
-   })
-   return mass
-}
+// function openOrSenior(data) {
+//    let mass = []
+//    data.forEach(elem => {
+//       if (elem[0] >= 55 && elem[1] > 7) {
+//          mass.push('Senior')
+//       } else {
+//          mass.push('Open')
+//       }
+//    })
+//    return mass
+// }
 
-console.log(openOrSenior([[19, 12], [69, 4], [30, 13], [88, 7], [31, 14], [16, 1], [87, -1]]));
+// console.log(openOrSenior([[19, 12], [69, 4], [30, 13], [88, 7], [31, 14], [16, 1], [87, -1]]));
+
+
+// function openOrSenior(data){
+//    return data.map(([age, handicap]) => (age > 54 && handicap > 7) ? 'Senior' : 'Open');
+//  }
+
+//========================================================================================================================================================
+
+function solution(str, ending) {
+   return str.endsWith(ending)
+}
