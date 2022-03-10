@@ -398,10 +398,26 @@
 
 //========================================================================================================================================================
 
-function towerBuilder(nFloors) {
-   let res = []
-   for (i = 0; i < nFloors; i++) {
-      res.push(" ".repeat((nFloors - i) - 1) + "*".repeat((i * 2) + 1) + " ".repeat((nFloors - i) - 1));
-   }
-   return res
+// function towerBuilder(nFloors) {
+//    let res = []
+//    for (i = 0; i < nFloors; i++) {
+//       res.push(" ".repeat((nFloors - i) - 1) + "*".repeat((i * 2) + 1) + " ".repeat((nFloors - i) - 1));
+//    }
+//    return res
+// }
+
+//========================================================================================================================================================
+
+function openOrSenior(data) {
+   let mass = []
+   data.forEach(elem => {
+      if (elem[0] >= 55 && elem[1] > 7) {
+         mass.push('Senior')
+      } else {
+         mass.push('Open')
+      }
+   })
+   return mass
 }
+
+console.log(openOrSenior([[19, 12], [69, 4], [30, 13], [88, 7], [31, 14], [16, 1], [87, -1]]));
