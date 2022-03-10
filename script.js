@@ -1,3 +1,4 @@
+'use string';
 // let array1 = [true, true, true, false,
 //    true, true, true, true,
 //    true, false, true, false,
@@ -282,8 +283,38 @@
 
 // console.log(maps([4, 1, 1, 1, 4]));
 
+// function maps(x) {
+//    return x.map(n => n * 2);
+// }
 
-//=================================================================================================================
+//========================================================================================================================================================
+
+// function getSum(a, b) {
+//    let count = 0;
+//    if (a == b) return a;
+//    if (a < b) {
+//       for (; a <= b; a++) {
+//          count += a;
+//       }
+//    } else if (a > b) {
+//       for (; b <= a; b++) {
+//          count += b;
+//       }
+//    }
+//    return count;
+// }
+
+
+
+// const GetSum = (a, b) => {
+//    let min = Math.min(a, b),
+//       max = Math.max(a, b);
+//    return (max - min + 1) * (min + max) / 2;
+// }
+
+// console.log(getSum(-375, -211));
+
+//========================================================================================================================================================
 
 // function cockroachSpeed(s) {
 //    return Math.floor(s * 100000 / 3600)
@@ -321,6 +352,51 @@
 // }
 
 //=================================================================================================================
+
+// function removeEveryOther(arr) {
+//    return arr.filter((_, idx) => idx % 2 === 0)
+// }
+
+//========================================================================================================================================================
+
+// function reverseWords(str) {
+//    let newStr = '';
+//    str.split(' ').forEach(word => {
+//       newStr += word.split('').reverse().join('') + ' ';
+//    });
+//    return newStr.trimEnd()
+// }
+
+//========================================================================================================================================================
+
+// function countPositivesSumNegatives(input) {
+//    if (!input || !input.length) return []
+//    let numbers = 0
+//    let minusNum = 0
+//    input.forEach(num => {
+//       if (num > 0) {
+//          numbers++
+//       } else {
+//          minusNum += num
+//       }
+//    })
+//    return [numbers, minusNum]
+// }
+// console.log(countPositivesSumNegatives([1221, -4, -4 - 5, null]));
+
+//========================================================================================================================================================
+
+// function simpleMultiplication(number) {
+//    if (number % 2 === 0) {
+//       return number * 8
+//    } else {
+//       return number * 9
+//    }
+// }
+
+// console.log(simpleMultiplication(4));
+
+//========================================================================================================================================================
 
 function towerBuilder(nFloors) {
    let res = []
