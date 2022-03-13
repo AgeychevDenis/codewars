@@ -445,12 +445,28 @@
 
 //========================================================================================================================================================
 
-function filter_list(l) {
-   arr = []
-   l.forEach(item => {
-      if (typeof (item) === 'number') {
-         arr.push(item)
-      }
-   })
-   return arr
+// function filter_list(l) {
+//    arr = []
+//    l.forEach(item => {
+//       if (typeof (item) === 'number') {
+//          arr.push(item)
+//       }
+//    })
+//    return arr
+// }
+
+// function filter_list(l) {
+//    return l.filter(v => typeof v == "number")
+// }
+
+//========================================================================================================================================================
+
+function isPangram(string) {
+   const allLetters = "abcdefghijklmnopqrstuvwxyz"
+   let str = string.toLowerCase()
+
+   return allLetters.split('').every(letter => str.includes(letter))
+
 }
+
+console.log(isPangram("The quick brown fox jumps over the lazy dog."));
