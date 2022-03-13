@@ -435,10 +435,22 @@
 
 //========================================================================================================================================================
 
-function squareSum(numbers){
-   let sum = 0
-   numbers.forEach(num => {
-     sum += num * num
+// function squareSum(numbers) {
+//    let sum = 0
+//    numbers.forEach(num => {
+//       sum += num * num
+//    })
+//    return sum
+// }
+
+//========================================================================================================================================================
+
+function filter_list(l) {
+   arr = []
+   l.forEach(item => {
+      if (typeof (item) === 'number') {
+         arr.push(item)
+      }
    })
-   return sum
- }
+   return arr
+}
