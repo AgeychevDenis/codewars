@@ -461,12 +461,34 @@
 
 //========================================================================================================================================================
 
-function isPangram(string) {
-   const allLetters = "abcdefghijklmnopqrstuvwxyz"
-   let str = string.toLowerCase()
+// function isPangram(string) {
+//    const allLetters = "abcdefghijklmnopqrstuvwxyz"
+//    let str = string.toLowerCase()
 
-   return allLetters.split('').every(letter => str.includes(letter))
+//    return allLetters.split('').every(letter => str.includes(letter))
 
+// }
+
+// console.log(isPangram("The quick brown fox jumps over the lazy dog."));
+
+//========================================================================================================================================================
+
+// function isIntArray(arr) {
+//   return Array.isArray(arr) && arr.every(function (x) { return Math.floor(x) === x });
+// }
+
+//========================================================================================================================================================
+
+const list1 = [{ "firstName": "Lukas", "lastName": "X.", "country": "Croatia", "continent": "Europe", "age": 35, "language": "Python" }, { "firstName": "Agustin", "lastName": "V.", "country": "Uruguay", "continent": "Americas", "age": 19, "language": "JavaScript" }, { "firstName": "Maia", "lastName": "S.", "country": "Tahiti", "continent": "Oceania", "age": 28, "language": "Clojure" }, { "firstName": "Louise", "lastName": "F.", "country": "France", "continent": "Europe", "age": 22, "language": "Java" }, { "firstName": "Joshua", "lastName": "O.", "country": "Isle of Man", "continent": "Europe", "age": 39, "language": "Clojure" }, { "firstName": "Joao", "lastName": "D.", "country": "Portugal", "continent": "Europe", "age": 35, "language": "JavaScript" }, { "firstName": "Yusuf", "lastName": "N.", "country": "Turkey", "continent": "Europe", "age": 22, "language": "Python" }, { "firstName": "Margret", "lastName": "M.", "country": "Iceland", "continent": "Europe", "age": 28, "language": "Java" }, { "firstName": "Mohamed", "lastName": "F.", "country": "Morocco", "continent": "Africa", "age": 40, "language": "Ruby" }, { "firstName": "Anna", "lastName": "R.", "country": "Liechtenstein", "continent": "Europe", "age": 32, "language": "JavaScript" }, { "firstName": "Harry", "lastName": "K.", "country": "Brazil", "continent": "Americas", "age": 19, "language": "Python" }, { "firstName": "Odval", "lastName": "F.", "country": "Mongolia", "continent": "Asia", "age": 38, "language": "Python" }, { "firstName": "Hugo", "lastName": "K.", "country": "Spain", "continent": "Europe", "age": 39, "language": "Python" }];
+
+function countDevelopers(list) {
+  let sum = 0
+  list.forEach(elem => {
+    if (elem.continent === 'Europe' && elem.language === 'JavaScript') {
+      sum += 1
+    }
+  })
+  return sum
 }
 
-console.log(isPangram("The quick brown fox jumps over the lazy dog."));
+console.log(countDevelopers(list1));
