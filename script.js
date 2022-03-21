@@ -521,22 +521,38 @@
 
 //========================================================================================================================================================
 
-function humanReadable(seconds) {
-   let t = seconds;
+// function humanReadable(seconds) {
+//    let t = seconds;
 
-   let h = Math.floor(t / 60 / 60);
+//    let h = Math.floor(t / 60 / 60);
 
-   let m = Math.floor(t / 60) - (h * 60);
+//    let m = Math.floor(t / 60) - (h * 60);
 
-   let s = t % 60;
+//    let s = t % 60;
 
-   let formatted = [
-      h.toString().padStart(2, '0'),
-      m.toString().padStart(2, '0'),
-      s.toString().padStart(2, '0')
-   ].join(':');
+//    let formatted = [
+//       h.toString().padStart(2, '0'),
+//       m.toString().padStart(2, '0'),
+//       s.toString().padStart(2, '0')
+//    ].join(':');
 
-   return formatted
-}
+//    return formatted
+// }
 
-console.log(humanReadable(86400));
+// console.log(humanReadable(86400));
+
+//========================================================================================================================================================
+
+function divisors(integer) {
+   let arr = [];
+   for (let i = 2; i < integer; i++) {
+      if (integer % i === 0) {
+         arr.push(i)
+      }
+   };
+   return arr.length > 0 ? arr : integer + ' is prime'
+};
+
+
+
+
