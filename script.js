@@ -510,11 +510,14 @@
 
 //========================================================================================================================================================
 
-let list1 = [{ "firstName": "Mark", "lastName": "G.", "country": "Scotland", "continent": "Europe", "age": 22, "language": "Python" }, { "firstName": "Victoria", "lastName": "T.", "country": "Puerto Rico", "continent": "Americas", "age": 30, "language": "java" }, { "firstName": "Emma", "lastName": "B.", "country": "Norway", "continent": "Europe", "age": 19, "language": "Clojure" }]
+// let list1 = [{ "firstName": "Mark", "lastName": "G.", "country": "Scotland", "continent": "Europe", "age": 22, "language": "Python" }, { "firstName": "Victoria", "lastName": "T.", "country": "Puerto Rico", "continent": "Americas", "age": 30, "language": "java" }, { "firstName": "Emma", "lastName": "B.", "country": "Norway", "continent": "Europe", "age": 19, "language": "Clojure" }]
 
-function getFirstPython(list) {
-  let a = list.find(v => v.language === 'Python')
-  return a ? `${a.firstName}, ${a.country}` : 'There will be no Python developers'
-}
+// function getFirstPython(list) {
+//   let a = list.find(v => v.language === 'Python')
+//   return a ? `${a.firstName}, ${a.country}` : 'There will be no Python developers'
+// }
 
-console.log(getFirstPython(list1));
+// console.log(getFirstPython(list1));
+
+//========================================================================================================================================================
+
